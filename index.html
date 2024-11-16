@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bakery Survey Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="form">
+      <header class="header">
+        <h1 id="title">Bakery Survey Form</h1>
+        <p id="description" class="description small-text">
+          Thank you for your response. It helps us improve and serve you better.
+          </p>
+      </header>
+      <form id="survey-form" class="survey-form">
+        <div class="name form-group">
+          <label id="name-label" for="name">Name</label>
+          <input id="name" type="text" placeholder="Enter your name" name="name" class="display-block text-input" required />  
+        </div>
+        <div class="email form-group">
+          <label id="email-label" for="email">Email</label>
+          <input id="email" type="email" placeholder="Enter your email" class="text-input" required />
+        </div>
+        <div class="age form-group">
+          <label id="number-label" for="number" class="text-inline">Age</label><p class="text-inline small-text"> (optional)</p/>
+          <input id="number" type="number" min="7" max="130" placeholder="Your age" class="text-input" />
+        </div class="form-group">
+        <div class="gender">
+          <label for="dropdown">Gender</label>
+          <select id="dropdown" name="gender">
+            <option value="">
+              Select a gender
+            </option>
+            <option value="male">
+              Male
+            </option>
+            <option value="female">
+              Female 
+            </option>
+            <option value="other">
+              Other
+            </option>
+            <option value="not-refer-to">
+              Not refer to
+            </option>
+          </select>
+        </div>
+        <div class="purchase-frequency form-group">
+          <p>Frequency of buying bakery products</p>
+          <label for="daily"><input id="daily" type="radio" name="purchase-frequency" value="daily" checked>Daily</label>
+          <label for="2-3-times-per-week"><input id="2-3-times-per-week" type="radio" name="purchase-frequency" value="2-3-times-per-week">2-3 times per week</label>
+          <label for="once-a-week"><input id="once-a-week" type="radio" name="purchase-frequency" value="once-a-week">Once a week</label>
+          <label for="2-3-times-per-month"><input id="2-3-times-per-month" type="radio" name="purchase-frequency" value="2-3-times-per-month">2-3 times per month</label>
+          <label for="once-a-month"><input id="once-a-month" type="radio" name="purchase-frequency" value="once-a-month">Once a month</label>
+          <label for="less-than-once-a-month"><input id="less-than-once-a-month" type="radio" name="purchase-frequency" value="less-than-once-a-month">(Less than once a month</label>
+        </div>
+        <div  class="form-group checkbox">
+          <div class="form-group checkbox-head">
+            <p class="text-inline ">Types of Favorite Bakery Products</p>
+            <p class="small-text text-inline">(You can select more than one option.)</p>
+          </div>
+          <label for="bread">
+            <input id="bread" type="checkbox" name="favorite-types" value="bread">
+            Bread</label>
+          <label for="croissant">
+            <input id="croissant" type="checkbox" name="favorite-types" value="croissant">
+          Croissant</label>
+          <label for="cake">
+            <input id="cake" type="checkbox" name="favorite-types" value="cake">
+            Cake</label>
+          <label for="pie-and-tart">
+            <input id="pie-and-tart" type="checkbox" name="favorite-types" value="pie-and-tart">
+            Pie & Tart</label>
+          <label for="cookies">
+            <input id="cookies" type="checkbox" name="favorite-types" value="cookies">
+            Cookies</label>
+          <label for="muffin-and-cupcake">
+            <input id="muffin-and-cupcake" type="checkbox" name="favorite-types" value="muffin-and-cupcake">
+            Muffin & Cupcake</label>
+          <label for="donut">
+            <input id="donut" type="checkbox" name="favorite-types" value="donut">
+            Donut</label>
+          <label for="pastries">
+            <input id="pastries" type="checkbox" name="favorite-types" value="pastries">
+            Pastries</label>
+          <label for="healthy-options">
+            <input id="healthy-options" type="checkbox" name="favorite-types" value="healthy-options">
+            Healthy Options</label>
+          <label for="other">
+            <input id="other" type="checkbox" name="favorite-types" value="other">
+            Other</label>
+        </div>
+        <div class="form-group">
+          <div>
+            <label>Please share any additional suggestions or feedback to help us improve.</label>
+          </div>
+          <textarea id="textarea" placeholder="Enter your feedback here..."></textarea>
+        </div class="form-group">
+        <div>
+          <button id="submit" type="submit">Submit</button>
+        </div>
+        <div></div>
+      </form>
+    </div>
+  </body>
+</html>
